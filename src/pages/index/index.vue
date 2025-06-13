@@ -115,6 +115,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
+declare const uni: any
+
 // 检查登录状态
 onMounted(() => {
   const isLoggedIn = uni.getStorageSync('isLoggedIn')

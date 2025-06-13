@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 
+declare const uni: any
+
 const formData = reactive({
   phone: '',
   code: '',

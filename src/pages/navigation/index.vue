@@ -57,6 +57,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
+declare const uni: any
+
 // 搜索关键词
 const searchKeyword = ref('')
 

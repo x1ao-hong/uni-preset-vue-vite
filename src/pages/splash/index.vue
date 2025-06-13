@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
+declare const uni: any
+
 const progress = ref(0)
 
 onMounted(() => {

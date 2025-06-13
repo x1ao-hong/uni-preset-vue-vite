@@ -1,5 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+
+declare const uni: any
 
 const phone = ref('')
 const password = ref('')
@@ -127,7 +129,7 @@ const handleWechatLogin = () => {
 <style lang="scss" scoped>
 .login-container {
   min-height: 100vh;
-  background: url('../../images/background/login-background.jpg') no-repeat center/cover;
+  background: url('../images/background/login-background.jpg') no-repeat center/cover;
   padding: 20rpx 40rpx;
   position: relative;
   box-sizing: border-box;

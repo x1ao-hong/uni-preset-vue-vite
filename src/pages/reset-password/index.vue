@@ -1,5 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+
+declare const uni: any
 
 const phone = ref('')
 const verifyCode = ref('')

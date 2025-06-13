@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+declare const uni: any
+
 const current = ref(0)
 
 const guideList = [
@@ -77,7 +79,7 @@ const handleStart = () => {
 <style lang="scss" scoped>
 .guide-container {
   height: 100vh;
-  background: url('/static/images/background/guide-background.png') no-repeat center/cover;
+  background: url('') no-repeat center/cover;
   position: relative;
   overflow: hidden;
   
