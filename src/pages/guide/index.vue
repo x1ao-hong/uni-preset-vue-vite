@@ -79,7 +79,7 @@ const handleStart = () => {
 <style lang="scss" scoped>
 .guide-container {
   height: 100vh;
-  background: url('') no-repeat center/cover;
+  background: url('/static/images/background/guide-background.png') no-repeat center/cover;
   position: relative;
   overflow: hidden;
   
