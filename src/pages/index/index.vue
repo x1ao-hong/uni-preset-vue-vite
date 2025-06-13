@@ -85,35 +85,13 @@
       </view>
     </view>
 
-    <!-- 底部导航栏 -->
-    <view class="tab-bar">
-      <view class="tab-item active">
-        <image src="/static/icons/common/home.png" class="icon icon-large" mode="aspectFit" />
-        <text>首页</text>
-      </view>
-      <view class="tab-item">
-        <image src="/static/icons/common/schedule.png" class="icon icon-large" mode="aspectFit" />
-        <text>行程</text>
-      </view>
-      <view class="tab-item center">
-        <view class="center-button" @tap="handleFlyClick">
-          <image src="/static/icons/common/fly.png" class="icon icon-large" mode="aspectFit" />
-        </view>
-      </view>
-      <view class="tab-item">
-        <image src="/static/icons/common/location.png" class="icon icon-large" mode="aspectFit" />
-        <text>周边</text>
-      </view>
-      <view class="tab-item">
-        <image src="/static/icons/common/user.png" class="icon icon-large" mode="aspectFit" />
-        <text>我的</text>
-      </view>
-    </view>
+
   </view>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+
 
 declare const uni: any
 
@@ -226,8 +204,8 @@ const handleFlyClick = () => {
 <style lang="scss" scoped>
 .home-container {
   min-height: 100vh;
-  background-color: #f8f4f0;
-  padding-bottom: 120rpx;
+  background-color: #F5F5DC;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 // 顶部搜索区域
@@ -477,62 +455,7 @@ const handleFlyClick = () => {
   }
 }
 
-// 底部导航栏
-.tab-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100rpx;
-  background-color: #f5f5f5;
-  display: flex;
-  padding-bottom: env(safe-area-inset-bottom);
-  box-shadow: 0 -2rpx 10rpx rgba(0,0,0,0.05);
-  
-  .tab-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    .icon {
-      margin-bottom: 4rpx;
-    }
-    
-    text {
-      font-size: 20rpx;
-      color: #999;
-    }
-    
-    &.active {
-      text {
-        color: #3e2723;
-      }
-    }
-    
-    &.center {
-      position: relative;
-      
-      .center-button {
-        position: absolute;
-        bottom: 20rpx;
-        width: 100rpx;
-        height: 100rpx;
-        background-color: #3e2723;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4rpx 8rpx rgba(62,39,35,0.2);
-        
-        .icon {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
+
 
 .placeholder {
   color: #999;

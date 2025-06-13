@@ -11,9 +11,21 @@ onMounted(() => {
       progress.value += 1
     } else {
       clearInterval(timer)
-      uni.redirectTo({
-        url: '/pages/guide/index'
-      })
+      
+      // 检查是否首次启动
+      const isFirstLaunch = uni.getStorageSync('isFirstLaunch')
+      
+      if (isFirstLaunch === 'false') {
+        // 非首次启动，跳转到首页
+        uni.reLaunch({
+          url: '/pages/index/index'
+        })
+      } else {
+        // 首次启动或未设置，跳转到引导页
+        uni.redirectTo({
+          url: '/pages/guide/index'
+        })
+      }
     }
   }, 20) // 2秒加载时间，每20ms增加1%
 })

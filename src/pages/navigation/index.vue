@@ -1,10 +1,7 @@
 <template>
   <view class="navigation-container">
-    <!-- 顶部搜索栏 -->
+    <!-- 搜索栏 -->
     <view class="search-header">
-      <view class="back-icon" @tap="goBack">
-        <image src="/static/icons/common/back.png" class="icon" mode="aspectFit" />
-      </view>
       <view class="search-box">
         <image src="/static/icons/common/search.png" class="icon" mode="aspectFit" />
         <input 
@@ -110,11 +107,6 @@ const spotsList = ref([
   }
 ])
 
-// 返回上一页
-const goBack = () => {
-  uni.navigateBack()
-}
-
 // 处理搜索
 const handleSearch = (e) => {
   console.log('搜索关键词：', searchKeyword.value)
@@ -143,29 +135,16 @@ const handleSpotClick = (spot) => {
 <style lang="scss" scoped>
 .navigation-container {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #F5F5DC;
   position: relative;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .search-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
   display: flex;
   align-items: center;
   padding: 20rpx 30rpx;
   background-color: #fff;
-  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
-  
-  .back-icon {
-    width: 88rpx;
-    height: 88rpx;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .search-box {
     flex: 1;
@@ -175,7 +154,6 @@ const handleSpotClick = (spot) => {
     display: flex;
     align-items: center;
     padding: 0 30rpx;
-    margin-left: 20rpx;
     
     .icon {
       margin-right: 10rpx;
@@ -192,7 +170,6 @@ const handleSpotClick = (spot) => {
 .map-container {
   width: 100%;
   height: 60vh;
-  padding-top: 128rpx;
   
   .map {
     width: 100%;

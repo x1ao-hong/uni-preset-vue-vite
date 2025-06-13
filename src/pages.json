@@ -13,6 +13,36 @@
 			}
 		},
 		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/schedule/index",
+			"style": {
+				"navigationBarTitleText": "我的行程"
+			}
+		},
+		{
+			"path": "pages/navigation/index",
+			"style": {
+				"navigationBarTitleText": "导航"
+			}
+		},
+		{
+			"path": "pages/nearby/index",
+			"style": {
+				"navigationBarTitleText": "周边推荐"
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
 			"path": "pages/login/index",
 			"style": {
 				"navigationBarTitleText": "登录"
@@ -30,24 +60,50 @@
 				"navigationBarTitleText": "修改密码",
 				"navigationStyle": "custom"
 			}
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		},
-		{
-			"path": "pages/navigation/index",
-			"style": {
-				"navigationStyle": "custom"
-			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#F5F5DC",
+		"backgroundColor": "#F5F5DC"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#8B4513",
+		"borderStyle": "black",
+		"backgroundColor": "#F5F5DC",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/icons/common/home.png",
+				"selectedIconPath": "/static/icons/common/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/schedule/index",
+				"iconPath": "/static/icons/common/schedule.png",
+				"selectedIconPath": "/static/icons/common/schedule.png",
+				"text": "行程"
+			},
+			{
+				"pagePath": "pages/navigation/index",
+				"iconPath": "/static/icons/common/fly.jpg",
+				"selectedIconPath": "/static/icons/common/fly.jpg",
+				"text": "导航"
+			},
+			{
+				"pagePath": "pages/nearby/index",
+				"iconPath": "/static/icons/common/location.png",
+				"selectedIconPath": "/static/icons/common/location.png",
+				"text": "周边"
+			},
+			{
+				"pagePath": "pages/profile/index",
+				"iconPath": "/static/icons/common/user.png",
+				"selectedIconPath": "/static/icons/common/user.png",
+				"text": "我的"
+			}
+		]
 	}
 }

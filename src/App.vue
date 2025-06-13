@@ -2,6 +2,11 @@
 export default {
   onLaunch: function() {
     console.log('App Launch')
+    
+    // 应用启动时先显示加载页面
+    uni.reLaunch({
+      url: '/pages/splash/index'
+    })
   },
   onShow: function() {
     console.log('App Show')

@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 declare const uni: any
 
 const current = ref(0)
+
+
 
 const guideList = [
   {
