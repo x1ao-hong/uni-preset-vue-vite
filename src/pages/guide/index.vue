@@ -7,24 +7,24 @@ const guideList = [
   {
     title: '享受旅行',
     subtitle: '旅游新时代，开启畅游人生！',
-    image: '/src/images/guide/guide1.jpg'
+    image: '/static/images/guide/guide1.jpg'
   },
   {
     title: '享受美食',
     subtitle: '美食藏宝图，开启美味之旅',
-    image: '/src/images/guide/guide2.jpg'
+    image: '/static/images/guide/guide2.jpg'
   },
   {
     title: '享受越西',
     subtitle: '民族瑰宝，薪火相传',
-    image: '/src/images/guide/guide3.jpg'
+    image: '/static/images/guide/guide3.jpg'
   }
 ]
 
 const guideImages = [
-  '/src/images/guide/guide1.jpg',
-  '/src/images/guide/guide2.jpg',
-  '/src/images/guide/guide3.jpg'
+  '/static/images/guide/guide1.jpg',
+  '/static/images/guide/guide2.jpg',
+  '/static/images/guide/guide3.jpg'
 ]
 
 const handleChange = (e) => {
@@ -77,21 +77,11 @@ const handleStart = () => {
 <style lang="scss" scoped>
 .guide-container {
   height: 100vh;
-  background: url('/src/images/background/guide-background.png') no-repeat center/cover;
+  background: url('/static/images/background/guide-background.png') no-repeat center/cover;
   position: relative;
   overflow: hidden;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: url('/src/images/guide/pattern.png') no-repeat center/cover;
-    opacity: 0.1;
-    pointer-events: none;
-  }
+
 }
 
 .guide-swiper {

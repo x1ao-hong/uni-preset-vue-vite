@@ -19,7 +19,9 @@ onMounted(() => {
 
 <template>
   <view class="splash-container">
-    <image src="/src/images/splash-bg.jpg" mode="aspectFill" class="splash-image" />
+    <view class="image-wrapper">
+      <image src="/static/images/splash-bg.jpg" mode="aspectFit" class="splash-image" />
+    </view>
     <view class="loading-bar">
       <view class="progress" :style="{ width: `${progress}%` }"></view>
     </view>
@@ -30,11 +32,24 @@ onMounted(() => {
 .splash-container {
   height: 100vh;
   position: relative;
-  background-color: #f9f6f2;
+  background-color: #f6f2e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
-  .splash-image {
+  .image-wrapper {
     width: 100%;
-    height: 100%;
+    height: 70vh; // 图片容器高度，可以根据需要调整
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .splash-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; // 保持图片比例
+    }
   }
   
   .loading-bar {

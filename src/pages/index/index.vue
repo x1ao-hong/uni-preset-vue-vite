@@ -128,12 +128,12 @@ onMounted(() => {
 
 // 导航列表数据
 const navList = ref([
-  { name: '出行', icon: '/src/static/icons/nav/travel.png' },
-  { name: '美食', icon: '/src/static/icons/nav/food.png' },
-  { name: '住宿', icon: '/src/static/icons/nav/hotel.png' },
-  { name: '文创', icon: '/src/static/icons/nav/culture.png' },
-  { name: '发现', icon: '/src/static/icons/nav/discover.png' },
-  { name: '公告', icon: '/src/static/icons/nav/notice.png' }
+  { name: '出行', icon: '/static/icons/nav/travel.png' },
+  { name: '美食', icon: '/static/icons/nav/food.png' },
+  { name: '住宿', icon: '/static/icons/nav/hotel.png' },
+  { name: '文创', icon: '/static/icons/nav/culture.png' },
+  { name: '发现', icon: '/static/icons/nav/discover.png' },
+  { name: '公告', icon: '/static/icons/nav/notice.png' }
 ])
 
 // 热门推荐数据
@@ -141,17 +141,17 @@ const hotList = ref([
   {
     title: '大理俊发铂尔曼酒店 3天2晚住宿+餐饮',
     price: '1200',
-    image: '/src/static/images/spots/dalijiudian.jpg'
+    image: '/static/images/spots/dalijiudian.jpg'
   },
   {
     title: '大理古城鸿隆半山酒店',
     price: '585',
-    image: '/src/static/images/spots/honglong.jpg'
+    image: '/static/images/spots/honglong.jpg'
   },
   {
     title: '浅语小院民宿',
     price: '256',
-    image: '/src/static/images/spots/qianyuxiaoyuan.jpg'
+    image: '/static/images/spots/qianyuxiaoyuan.jpg'
   }
 ])
 
@@ -164,27 +164,27 @@ const destinationList = ref([
   {
     title: '大理古城',
     description: '历史悠久文化古城',
-    image: '/src/static/images/spots/dali.jpg'
+    image: '/static/images/spots/dali.jpg'
   },
   {
     title: '苍山',
     description: '19峰18溪景色秀丽',
-    image: '/src/static/images/spots/cangshang.jpg'
+    image: '/static/images/spots/cangshang.jpg'
   },
   {
     title: '洱海',
     description: '高原湖泊，湖水清澈',
-    image: '/src/static/images/spots/erhai.jpg'
+    image: '/static/images/spots/erhai.jpg'
   },
   {
     title: '喜洲古镇',
     description: '白族民居建筑群',
-    image: '/src/static/images/spots/xizhou.jpg'
+    image: '/static/images/spots/xizhou.jpg'
   },
   {
     title: '文笔村',
     description: '白族村落，风景如画',
-    image: '/src/static/images/spots/wenbicai.jpg'
+    image: '/static/images/spots/wenbicai.jpg'
   }
 ])
 
@@ -233,7 +233,7 @@ const handleFlyClick = () => {
   display: flex;
   align-items: center;
   padding: 20rpx 30rpx;
-  background-color: #fff;
+  background-color: #f5f5f5;
   
   .location {
     font-size: 32rpx;
@@ -282,7 +282,7 @@ const handleFlyClick = () => {
   display: flex;
   flex-wrap: wrap;
   padding: 30rpx;
-  background-color: #fff;
+  background-color: #f5f5f5;
   margin-top: 20rpx;
   
   .nav-item {
@@ -308,7 +308,7 @@ const handleFlyClick = () => {
 // 公共section样式
 .section {
   margin-top: 20rpx;
-  background-color: #fff;
+  background-color: #f5f5f5;
   padding: 30rpx;
   
   .section-header {
@@ -482,7 +482,7 @@ const handleFlyClick = () => {
   right: 0;
   bottom: 0;
   height: 100rpx;
-  background-color: #fff;
+  background-color: #f5f5f5;
   display: flex;
   padding-bottom: env(safe-area-inset-bottom);
   box-shadow: 0 -2rpx 10rpx rgba(0,0,0,0.05);

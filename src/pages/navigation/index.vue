@@ -89,7 +89,7 @@ const spotsList = ref([
   {
     id: 1,
     name: '凯地里拉温泉',
-    image: '/src/static/images/spots/kaidilila.jpg',
+    image: '/static/images/spots/kaidilila.jpg',
     rating: 5.0,
     distance: '800m',
     description: '孕育了独特的人文风情',
@@ -99,7 +99,7 @@ const spotsList = ref([
   {
     id: 2,
     name: '普雄五彩梯田',
-    image: '/src/static/images/spots/puxiong.jpg',
+    image: '/static/images/spots/puxiong.jpg',
     rating: 4.5,
     distance: '650m',
     description: '孕育了独特的人文风情',
